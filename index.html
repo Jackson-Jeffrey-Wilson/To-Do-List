@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="icon" href="images/title2.png">
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+
+    <div class="todo-container">
+
+        <div class="top-bar">
+            <h2>Todo List</h2>
+            <button class="dark-mode-toggle">🌙</button>
+        </div>
+
+        <input placeholder="Search..." class="search-input">
+
+        <div class="todo-input-grid">
+            <input placeholder="Todo name" class="js-name-input">
+            <input 
+                type="date"
+                class="js-dueDate-input date"
+            >
+            <select class="js-category-select">
+                <option value="Work">Work</option>
+                <option value="Study">Study</option>
+                <option value="Personal">Personal</option>
+            </select>
+            <button class="add-todo-button">Add</button>
+        </div>
+
+        <div class="category-filters">
+            <button data-filter="All">All</button>
+            <button data-filter="Work">Work</button>
+            <button data-filter="Study">Study</button>
+            <button data-filter="Personal">Personal</button>
+        </div>
+
+        <div class="dashboard"></div>
+        <div class="js-todo-list todo-grid"></div>
+
+    </div>
+
+    <script src="todolist.js"></script>
+</body>
+</html>
