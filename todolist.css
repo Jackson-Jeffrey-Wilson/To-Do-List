@@ -260,6 +260,15 @@ body.dark .progress-container {
 }
 
 @media (max-width: 650px) {
+
+    .search-input,
+    .js-name-input,
+    .js-dueDate-input,
+    .js-category-select {
+        height: 30px;
+        font-size: 14px;
+    }
+    
     .todo-container { width: 95%; 
         padding: 18px; 
     }
@@ -342,4 +351,5 @@ input[type="date"] {
 
 input, select {
     font-size: 16px;
+
 }
